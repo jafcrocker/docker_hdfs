@@ -1,0 +1,5 @@
+#!/bin/bash
+# Run HDFS in the foreground
+
+export HADOOP_ROOT_LOGGER=INFO,RFA
+exec /opt/hadoop/bin/hdfs secondarynamenode
